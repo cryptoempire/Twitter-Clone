@@ -1,22 +1,24 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
-constructor() {
-  super();
-  this.state = {
-    input: '',
-    isClicked: false,
+  constructor() {
+    super();
+    this.state = {
+      input: '',
+      isClicked: false
+    };
   }
-}
-
-
 
   render() {
     return (
-      <div className='mt4-ns w-10'>
-        <input className='br-pill  bw1 shadow-1 bg-light-green ' type='text' placeholder="Search Twitter" />
+      <div className="mt3 w-10 fr mr6">
+        <input
+          className="br-pill  bw1 shadow-1 bg-light-green "
+          type="text"
+          placeholder="Search Twitter"
+        />
       </div>
-    )
+    );
   }
 }
 
